@@ -3,13 +3,19 @@ import Container from './components/styles/Container.styled';
 import GlobalStyles from './components/styles/GlobalStyles';
 import Header from './components/Header';
 import { theme } from './constants';
+import { content } from './constants';
+import Card from './components/Card';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Header />
-      {/* <Container>Hello</Container> */}
+      <Container>
+        {content.map((e) => (
+          <Card item={e} key={e.id} />
+        ))}
+      </Container>
     </ThemeProvider>
   );
 }
