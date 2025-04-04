@@ -5,7 +5,7 @@ export const StyledHeader = styled.header`
   background-image: url(${(props) => props.$bg});
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 2rem 3rem;
+  padding: 2rem 5rem;
 
   @media (max-width: ${({ theme }) => theme.breakPoints.tablet}) {
     padding: 2rem 1rem;
