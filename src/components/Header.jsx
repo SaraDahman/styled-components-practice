@@ -5,9 +5,9 @@ import { Flex } from './styles/Flex.styles';
 
 function Header() {
   return (
-    <StyledHeader $bg='/$bg-hero-desktop.svg'>
+    <StyledHeader $bg='bg-hero-desktop.svg'>
       <Nav>
-        <Image src='/logo.svg' alt='huddle logo' width='10%' />
+        <Image src='logo.svg' alt='huddle logo' width='10%' />
         <Button $bg='#fff'>Try It Free</Button>
       </Nav>
       <Flex>
@@ -23,7 +23,7 @@ function Header() {
           </Button>
         </div>
         <Image
-          src='/illustration-mockups.svg'
+          src='illustration-mockups.svg'
           width='50%'
           className='header-image'
         />

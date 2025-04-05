@@ -6,11 +6,11 @@ import SocialMedia from './SocialMedia';
 function Footer() {
   return (
     <StyledFooter>
-      <Image src='/public/logo.svg' alt='Huddle Logo' width='170px' />
+      <Image src='logo.svg' alt='Huddle Logo' width='170px' />
       <Flex $footer>
         <ul className='contact-info'>
           <li>
-            <Image src='/icon-location.svg' alt='location icon' width='20px' />
+            <Image src='icon-location.svg' alt='location icon' width='20px' />
             <span>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequuntur rem officiis ullam tempora sunt. Necessitatibus
@@ -18,11 +18,11 @@ function Footer() {
             </span>
           </li>
           <li>
-            <Image src='/icon-phone.svg' alt='phone icon' width='20px' />
+            <Image src='icon-phone.svg' alt='phone icon' width='20px' />
             <span>+-543-123-4567</span>
           </li>
           <li>
-            <Image src='/icon-email.svg' alt='location icon' width='20px' />
+            <Image src='icon-email.svg' alt='location icon' width='20px' />
             <span>example@huddle.com</span>
           </li>
         </ul>
