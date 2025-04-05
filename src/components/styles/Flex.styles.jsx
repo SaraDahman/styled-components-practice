@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Flex = styled.div`
   display: flex;
-  align-items: center;
+  align-items: ${({ $footer }) => ($footer ? 'flex-start' : 'center')};
+  gap: ${({ $footer }) => ($footer ? '8rem' : '0')};
 
   & > * {
     flex: 1;
@@ -26,11 +27,11 @@ export const Flex = styled.div`
 
   @media (max-width: ${({ theme }) => theme.breakPoints.tablet}) {
     flex-direction: column;
-    gap: 3rem;
-    text-align: center;
-    padding: 0 3rem;
+    gap: ${({ $footer }) => ($footer ? '0.5rem' : '3rem')};
+    padding: ${({ $footer }) => ($footer ? '0' : '0 3rem')};
 
     div {
+      text-align: center;
       align-items: center;
       padding: 0;
     }
@@ -43,13 +44,13 @@ export const Flex = styled.div`
       font-size: 1rem;
     }
 
-    img {
+    img.header-image {
       width: 100%;
     }
   }
 
   @media (max-width: ${({ theme }) => theme.breakPoints.mobile}) {
-    padding: 0 1.5rem;
+    padding: ${({ $footer }) => ($footer ? '0' : '0 1.5rem')};
 
     div h1 {
       font-size: 1.5rem;

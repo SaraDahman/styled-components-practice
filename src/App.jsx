@@ -7,7 +7,8 @@ import { content } from './constants';
 import Card from './components/Card';
 import { BottomCard } from './components/styles/Card.styles';
 import { Button } from './components/styles/Button.styles';
-import { Footer } from './components/styles/Footer.styles';
+import { StyledFooter } from './components/styles/Footer.styles';
+import Footer from './components/Footer';
 
 function App() {
   return (

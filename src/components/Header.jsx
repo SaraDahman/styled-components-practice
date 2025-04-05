@@ -22,7 +22,11 @@ function Header() {
             Get Started For Free
           </Button>
         </div>
-        <Image src='/illustration-mockups.svg' width='50%' />
+        <Image
+          src='/illustration-mockups.svg'
+          width='50%'
+          className='header-image'
+        />
       </Flex>
     </StyledHeader>
   );
