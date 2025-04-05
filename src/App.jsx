@@ -15,18 +15,20 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Header />
-      <Container>
-        {content.map((e) => (
-          <Card item={e} key={e.id} />
-        ))}
-        <BottomCard>
-          <h2> Ready To Build Your Community?</h2>
+      <main>
+        <Container>
+          {content.map((e) => (
+            <Card item={e} key={e.id} />
+          ))}
+          <BottomCard>
+            <h2> Ready To Build Your Community?</h2>
 
-          <Button $bg='#ff52bf' color='#fff'>
-            Get Started For Free
-          </Button>
-        </BottomCard>
-      </Container>
+            <Button $bg='#ff52bf' color='#fff'>
+              Get Started For Free
+            </Button>
+          </BottomCard>
+        </Container>
+      </main>
       <Footer />
     </ThemeProvider>
   );
