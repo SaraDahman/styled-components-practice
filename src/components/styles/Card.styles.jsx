@@ -54,3 +54,39 @@ export const StyledCard = styled.div`
     }
   }
 `;
+
+export const BottomCard = styled.div`
+  position: absolute;
+  width: 50%;
+  border-radius: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
+  padding: 3rem 0;
+  background-color: #fff;
+  left: 50%; /* Center horizontally */
+  bottom: 0; /* Align to bottom edge */
+  transform: translate(-50%, 50%); /* Shift up by half height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+
+  @media (max-width: ${({ theme }) => theme.breakPoints.tablet}) {
+    width: 70%;
+    padding: 2rem 0;
+
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakPoints.mobile}) {
+    width: 80%;
+    padding: 2rem 0;
+    gap: 1.5rem;
+
+    h2 {
+      font-size: 0.8rem;
+    }
+  }
+`;
